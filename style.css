@@ -1,0 +1,22 @@
+*{
+    font-family:Arial;
+}
+h1{
+    text-align: center;
+    color:white;
+}
+p{
+color:balck;
+}
+img {
+    float:right;margin-bottom:0px;
+    width: 30%;
+    height:30%;
+}
+p {
+    text-align: left;
+
+}
+h2{
+    color:white;
+}
