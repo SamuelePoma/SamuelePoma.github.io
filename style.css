@@ -1,22 +1,27 @@
 *{
-    font-family:Arial;
+    font-family: 'Times New Roman', Times, serif;
 }
 h1{
     text-align: center;
     color:white;
 }
 p{
-color:balck;
-}
-img {
-    float:right;margin-bottom:0px;
-    width: 30%;
-    height:30%;
+color:black;
 }
 p {
-    text-align: left;
+    text-align: center;
 
 }
-h2{
+h2 {
+    text-align: center;
     color:white;
+}
+#sidemenu ul
+{
+    display: inline;
+    justify-content: left;
+    display: block;
+    margin: 10px;
+    padding: 10px 0 0 60px;
+    width: 260px;
 }
