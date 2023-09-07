@@ -21,9 +21,9 @@ h2 {
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
   }
 
 .topbar a {
@@ -56,7 +56,7 @@ background-size: 100%;
  }
  .links{
     
-    background-color: #333
+    padding: 5px black;
  }
  .info{
     text-align: left;
@@ -67,6 +67,7 @@ background-size: 100%;
     padding: 0;
     width: 200px;
     background-color: #f1f1f1;
+    float: left;
   }
   
   .aside a {
@@ -76,7 +77,7 @@ background-size: 100%;
     text-decoration: none;
   }
   
-  /* Change the link color on hover */
+  
   .aside a:hover {
     background-color: #555;
     color: white;
@@ -99,4 +100,15 @@ background-size: 100%;
   
   tr:nth-child(even) {
     background-color: #dddddd;
+  }
+  .footer{
+    text-align: left;
+    margin: 5px black;
+    bottom: 0cm;
+  }
+  .index_q{
+    color: black;
+  }
+  #logohz{
+    float: left;
   }
