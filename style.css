@@ -6,31 +6,31 @@ h1{
     color:white;
 }
 p{
-color:black;
-}
-p {
     text-align: center;
-
+    color: white;
+    margin: 2px;
+    padding: 2px;
 }
 h2 {
     text-align: center;
     color:white;
 }
-ul {
+.menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
   }
-  li {
+
+.topbar a {
     float: left;
   }
   
-  li a {
+.topbar a {
     display: block;
     color: white;
     text-align: center;
@@ -38,10 +38,50 @@ ul {
     text-decoration: none;
   }
   
-  li a:hover {
+.topbar a:hover {
     background-color: #111;
   }
   
   .active {
     background-color: #4CAF50;
+  }
+
+body{
+background-image: url("tech.png");
+background-repeat: no-repeat;
+background-size: 100%;
+ }
+ h3{
+    text-align: center;
+ }
+ .links{
+    
+    background-color: #333
+ }
+ .info{
+    text-align: left;
+ }
+ .asidemenu {
+    list-style-type: none;
+    margin-top: 10;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+  }
+  
+  .aside a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color on hover */
+  .aside a:hover {
+    background-color: #555;
+    color: white;
+  }
+  .active {
+    background-color: #04AA6D;
+    color: white;
   }
