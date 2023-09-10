@@ -1,121 +1,209 @@
-*{
+* {
     font-family: 'Times New Roman', Times, serif;
+    color: #111;
 }
-h1{
+
+h1 {
     text-align: center;
-    color:white;
+    color: black;
 }
-p{
+
+h3 {
+    text-align: center;
+    margin-top: 70px;
+}
+
+p {
     text-align: center;
     color: white;
     margin: 2px;
     padding: 2px;
 }
-h2 {
-    text-align: center;
-    color:white;
-}
+
 .menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-  }
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
 
 .topbar a {
     float: left;
-  }
-  
+}
+
 .topbar a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
-  
+}
+
 .topbar a:hover {
     background-color: #111;
-  }
-  
-  .active {
-    background-color: #4CAF50;
-  }
+}
 
-body{
-background-image: url("sfondo.png");
-background-repeat: no-repeat;
-background-size: 100%;
- }
- h3{
-    text-align: center;
- }
- .links{
-    
-    padding: 5px black;
- }
- .info{
-    text-align: center;
+.active {
+    background-color: #4CAF50;
+}
+
+.info {
+    text-align: left;
     color: black;
- }
- .asidemenu {
-    list-style-type: none;
-    margin-top: 10;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
-    float: left;
-  }
-  
-  .aside a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-  }
-  
-  
-  .aside a:hover {
-    background-color: #555;
-    color: white;
-  }
-  .active {
-    background-color: #04AA6D;
-    color: white;
-  }
-  table {
+    margin-top: 40px;
+}
+
+table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-  }
-  
-  td, th {
+}
+
+th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
-  }
-  
-  tr:nth-child(even) {
+}
+
+tr:nth-child(even) {
     background-color: #dddddd;
-  }
-  .footer{
-    text-align: left;
-    margin: 5px black;
-    bottom: 0cm;
-  }
-  .index_q{
     color: black;
-  }
-  #logohz{
-    float: left;
-  }
-  p1 {
-color: black;
-  }
+}
+
+.links {
+    text-align: left;
+}
+
+#logohz {
+    float: center;
+    margin-left: 500px;
+    margin-top: 10px;
+
+}
+
 #faq {
     font-size: 30px;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay {
+        overflow-y: auto;
+    }
+
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+img {
+    border-radius: 20px;
+
+}
+
+.question {
+    margin-top: 65px;
+    text-align: right;
+    color: #111;
+}
+
+#hzpic {
+    margin-top: 30px;
+    float: left;
+}
+
+.picme {
+    margin-left: 485px;
+    float: left;
+
+}
+
+.italypic {
+    float: center;
+    margin-left: 570px;
+}
+.catania{
+    float: center;
+    margin-left: 570px;
+}
+
+.save{
+    color: #111;
+    text-align: justify;
+}
+.imgsave{
+    float: left;
+    margin-right: 1em;
+}
+.waiter{
+    color: #111;
+    text-align: justify;
+}
+.imgwaiter{
+    float: left;
+    margin-right: 1em;
+}
+.itconsultant{
+    color: #111;
+    text-align: justify;
+}
+.imgitconsultant{
+    float: left;
+    margin-right: 1em;
+
+}
+.imgsecurityguard{
+    float: left;
+    margin-right: 1em;
 }

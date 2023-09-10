@@ -1,56 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Index</title>
-<link rel="stylesheet" href="./style.css">
-    </head>  
-    <body background="tech.png">
-        <header>
-            
-        <ul class="menu">
-            <li class="topbar"><a class="active" href="index.html">Home</a></li>
-            <li class="topbar"><a href="profile.html">Profile</a></li>
-            <li class="topbar"><a href="dashboard.html">Dashboard</a></li>
-            <li class="topbar"><a href="blog.html">Blog</a></li>
-            <li class="topbar"><a href="faq.html">FAQ</a></li>
-          </ul>
-        
-        </header>
-          <h1>HBO-ICT</h1>
-          <img src="logohz.png"  border="1" align="center">
-          <img src="indexq.jpg" align="right">
-          <br>
-          <ul class="asidemenu">
-            <li class="aside"><a href="https://hz.nl/">HBO-ICT</a></li>
-            <li class="aside"><a href="https://hz.nl/">IB</a></li>
-            <li class="aside"><a href="https://hz.nl/"> LEARN ENVIRONMENT</a></li>
-            <li class="aside"><a href="https://hz.nl/"> TEAMS</a></li>
-            <li class="aside"><a href="https://hz.nl/">HZ</a></li>
-            <li class="aside"><a href="https://hz.nl/"> GITHUB</a></li>
-          </ul>
-          <h3>Why did you choose this study programme?</h3>
-          <p class="index_q">Curiosity is the key of my choice, I've always been interested in IT since I was a child. 
-            I think that this subject will change the world as we know it, 
-            destroying some wall that persist and help billion of people from everyday problems to way bigger ones.
-            IT is the present and the future of our humanity.</p>
-            <br>
-            <h3>What do you want to do after graduating?</h3>
-            <p class="index_q">I Honestly don't know exactly what I want to do afetr graduation, but I know that studying at HZ will 
-                give me the opportunity to answer to this question, thank to variarity of subjects we will study, projects and intership.
-                I know that after graduation I would like to work in something that can help people or something that can make their life 
-                easier and more technological. HZ gives us the possibiliy to choose
-                 3 different specializations as: Data science, Business IT consultant and Softwer engineer. Probably I will choose
-                  the last one because it fit better with my interests and my ideal future job.</p>
-                
 
-            <ul class="footer">
-            <li class="links">Learn more about HZ University of Applied Science <a href="https://hz.nl/en"> Here!</a></li>
-            <li class="links">Learn more about Middelburg<a href="https://it.wikipedia.org/wiki/Middelburg"> Here!</a></li>
-            </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<header>
 
-                 
+    <ul class="menu">
+        <li class="topbar"><a class="active" href="index.html">Home</a></li>
+        <li class="topbar"><a href="profile.html">Profile</a></li>
+        <li class="topbar"><a href="dashboard.html">Dashboard</a></li>
+        <li class="topbar"><a href="blog.html">Blog</a></li>
+        <li class="topbar"><a href="faq.html">FAQ</a></li>
+    </ul>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="https://hz.nl/">HBO-ICT</a>
+            <a href="https://hz.nl/">IB</a>
+            <a href="https://hz.nl/"> LEARN ENVIRONMENT</a>
+            <a href="https://hz.nl/"> TEAMS</a>
+            <a href="https://hz.nl/">HZ</a>
+            <a href="samuelepoma.github.io"> GITHUB</a>
+        </div>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;Menu</span>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
+</header>
+<div id="logohz">
+    <img src="logohz.png" alt="Logo">
+</div>
+
+<body bgcolor="antiquewhite">
+    <div id="hzpic">
+        <img src="hzpic.jpg" alt="HZ">
+    </div>
+    <h3 class="question"></h3>
+    <fieldset style="border: 3px double black">
+        <legend style="color: red; font-family: papyrus;"><strong>WHY DID YOU CHOOSE THIS STUDY PROGRAM?</strong>
+        </legend> I think that this subject will change the world as we know it,destroying some wall that persist and
+        help <br>
+        billion of people from everyday problems to way bigger ones. IT is the present and the future of our humanity.
+    </fieldset>
+    <br>
+    <fieldset style="border: 3px double black">
+        <legend style="color: red; font-family: papyrus;"><strong>WHAT DO YOU WANT TO DO AFTER GRADUATION?</strong>
+        </legend> I Honestly don't know exactly what I want to do afetr graduation, but I know that studying at HZ
+        will<br>
+        give me the opportunity to answer to this question, thank to variarity of subjects we will study, projects
+        andintership.<br>
+        I know that after graduation I would like to work in something that can help people or something that can
+        make<br>
+        their life easier and more technological. HZ gives us the possibiliy to choose 3 different specializations
+        as:<br>
+        Data science, Business IT consultant and Softwer engineer.Probably I will choose the last one because it fit
+        better<br>
+        with my interests and my ideal future job.
+    </fieldset>
+
+    <footer>
+        <br>
+        <br>
+        <br>
+        <ul class="links">
+            <li class="links">Learn more about HZ University of Applied Science <a href="https://hz.nl/en"> Here!</a>
+            </li>
+            <li class="links">Learn more about Middelburg<a href="https://it.wikipedia.org/wiki/Middelburg"> Here!</a>
+            </li>
+        </ul>
+    </footer>
+
+
 </body>
+
 </html>
