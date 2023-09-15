@@ -1,3 +1,4 @@
+/*TEXT DESIGN*/
 * {
     font-family: 'Times New Roman', Times, serif;
     color: #111;
@@ -20,6 +21,7 @@ p {
     padding: 2px;
 }
 
+/*TOP MENU*/
 .menu {
     list-style-type: none;
     margin: 0;
@@ -57,6 +59,7 @@ p {
     margin-top: 40px;
 }
 
+/* DASHBOARD*/
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -78,17 +81,11 @@ tr:nth-child(even) {
     text-align: left;
 }
 
-#logohz {
-    float: center;
-    margin-left: 500px;
-    margin-top: 10px;
-
-}
-
 #faq {
     font-size: 30px;
 }
 
+/*SIDEMENU*/
 .overlay {
     height: 0%;
     width: 100%;
@@ -118,7 +115,6 @@ tr:nth-child(even) {
     display: block;
     transition: 0.3s;
 }
-
 .overlay a:hover,
 .overlay a:focus {
     color: #f1f1f1;
@@ -147,17 +143,13 @@ tr:nth-child(even) {
     }
 }
 
-img {
-    border-radius: 20px;
-
-}
-
 .question {
     margin-top: 65px;
     text-align: right;
     color: #111;
 }
 
+/*IMG*/
 #hzpic {
     margin-top: 30px;
     float: left;
@@ -173,37 +165,55 @@ img {
     float: center;
     margin-left: 570px;
 }
-.catania{
+
+.catania {
     float: center;
     margin-left: 570px;
 }
 
-.save{
+.save {
     color: #111;
     text-align: justify;
 }
-.imgsave{
+
+.imgsave {
     float: left;
     margin-right: 1em;
 }
-.waiter{
+
+.waiter {
     color: #111;
     text-align: justify;
 }
-.imgwaiter{
+
+.imgwaiter {
     float: left;
     margin-right: 1em;
 }
-.itconsultant{
+
+.itconsultant {
     color: #111;
     text-align: justify;
 }
-.imgitconsultant{
+
+.imgitconsultant {
     float: left;
     margin-right: 1em;
 
 }
-.imgsecurityguard{
+
+.imgsecurityguard {
     float: left;
     margin-right: 1em;
+}
+
+img {
+    border-radius: 20px;
+}
+
+#logohz {
+    float: center;
+    margin-left: 500px;
+    margin-top: 10px;
+
 }
