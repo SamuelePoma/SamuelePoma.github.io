@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>DASHBOARD</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+<header>
 
-<body bgcolor="antiquewhite">
     <ul class="menu">
         <li class="topbar"><a href="index.html">Home</a></li>
         <li class="topbar"><a href="profile.html">Profile</a></li>
@@ -14,29 +17,48 @@
         <li class="topbar"><a href="blog.html">Blog</a></li>
         <li class="topbar"><a href="faq.html">FAQ</a></li>
     </ul>
+</header>
+
+<body>
     <h1>DASHBOARD</h1>
-    
+
     <table style="width: 100%;" border="2px solid black">
-        
+
         <tr>
             <th>Quartile</th>
             <th>Course</th>
             <th>Exam</th>
-            <th>grade</th>
+            <th>Grade</th>
             <th>EC</th>
 
         </tr>
         <tr>
             <td rowspan="3">1</td>
-            <td>Program & Career Orientation</td>
+            <td>Program and Career Orientation</td>
             <td>Assessment website</td>
-            <td>x</td>
+            <td>
+                <select name="Grade" id="Grade">
+                    <option value="incomplete">Incomplete</option>
+                    <option value="complete">Complete</option>
+                    <option value="fail">Fail</option>
+                </select>
+            </td>
+
+
+
+
             <td>2,5</td>
         <tr>
 
             <td>Computer Science Basics</td>
             <td>Written knowledge test</td>
-            <td>x</td>
+            <td>
+                <select name="Grade" id="Grade2">
+                    <option value="incomplete">Incomplete</option>
+                    <option value="complete">Complete</option>
+                    <option value="fail">Fail</option>
+                </select>
+            </td>
             <td>5</td>
 
         </tr>
@@ -45,7 +67,13 @@
 
             <td>Programming Basics</td>
             <td>Case study exam</td>
-            <td>x</td>
+            <td>
+                <select name="Grade" id="Grade3">
+                    <option value="incomplete">Incomplete</option>
+                    <option value="complete">Complete</option>
+                    <option value="fail">Fail</option>
+                </select>
+            </td>
             <td>5</td>
         </tr>
         <tr>
@@ -53,14 +81,26 @@
             <td>Game Development</td>
             <td>Presentation<br>
                 Case study exam</td>
-            <td>x</td>
+            <td>
+                <select name="Grade" id="Grade4">
+                    <option value="incomplete">Incomplete</option>
+                    <option value="complete">Complete</option>
+                    <option value="fail">Fail</option>
+                </select>
+            </td>
             <td>10</td>
         </tr>
         <tr>
             <td rowspan="2">3</td>
             <td>Framework Development 1</td>
             <td>Case study exam</td>
-            <td>x</td>
+            <td>
+                <select name="Grade" id="Grade5">
+                    <option value="incomplete">Incomplete</option>
+                    <option value="complete">Complete</option>
+                    <option value="fail">Fail</option>
+                </select>
+            </td>
             <td>5</td>
         </tr>
         <tr>
@@ -69,7 +109,13 @@
                 interview<br>
                 Assignment<br>
                 Case study exam</td>
-            <td>x</td>
+            <td>
+                <select name="Grade" id="Grade6">
+                    <option value="incomplete">Incomplete</option>
+                    <option value="complete">Complete</option>
+                    <option value="fail">Fail</option>
+                </select>
+            </td>
             <td>7,5</td>
         </tr>
         <tr>
@@ -79,24 +125,44 @@
                 Report of acceptance tests
                 and optional assessments<br>
                 IT Development portfolio</td>
-            <td>x</td>
+            <td>
+                <select name="Grade" id="Grade7">
+                    <option value="incomplete">Incomplete</option>
+                    <option value="complete">Complete</option>
+                    <option value="fail">Fail</option>
+                </select>
+            </td>
             <td>10</td>
         </tr>
         <tr>
             <td rowspan="2">All</td>
             <td>IT Personality 1</td>
             <td>Portfolio</td>
-            <td>x</td>
+            <td>
+                <select name="Grade" id="Grade8">
+                    <option value="incomplete">Incomplete</option>
+                    <option value="complete">Complete</option>
+                    <option value="fail">Fail</option>
+                </select>
+            </td>
             <td>1,25</td>
         </tr>
         <td>IT Personality 2</td>
         <td>Portfolio</td>
-        <td>x</td>
+        <td>
+            <select name="Grade" id="Grade9">
+                <option value="incomplete">Incomplete</option>
+                <option value="complete">Complete</option>
+                <option value="fail">Fail</option>
+            </select>
+        </td>
         <td>1.25</td>
     </table>
+    <div class="circle">
+        <h4>NBSA, Minimum of 45 EC's</h4>
+        <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="60" style="--value:100"></div>
+    </div>
+
 </body>
-<h3>NBSA, Minimum of 45 EC's</h3>
-<label for="file">Downloading progress:</label>
-<progress id="file" value="0" max="45">0% </progress>
 
 </html>

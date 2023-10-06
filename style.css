@@ -1,12 +1,13 @@
 /*TEXT DESIGN*/
 * {
     font-family: 'Times New Roman', Times, serif;
-    color: #111;
+    color: white;
+    background-color: #333;
 }
 
 h1 {
     text-align: center;
-    color: black;
+
 }
 
 h3 {
@@ -16,10 +17,10 @@ h3 {
 
 p {
     text-align: center;
-    color: white;
     margin: 2px;
     padding: 2px;
 }
+
 
 /*TOP MENU*/
 .menu {
@@ -41,16 +42,16 @@ p {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 15px 127px;
     text-decoration: none;
 }
 
 .topbar a:hover {
-    background-color: #111;
+    background-color: black;
 }
 
 .active {
-    background-color: #4CAF50;
+    background-color: green;
 }
 
 .info {
@@ -83,6 +84,7 @@ tr:nth-child(even) {
 
 #faq {
     font-size: 30px;
+    padding: 20px;
 }
 
 /*SIDEMENU*/
@@ -115,6 +117,7 @@ tr:nth-child(even) {
     display: block;
     transition: 0.3s;
 }
+
 .overlay a:hover,
 .overlay a:focus {
     color: #f1f1f1;
@@ -144,12 +147,11 @@ tr:nth-child(even) {
 }
 
 .question {
-    margin-top: 65px;
-    text-align: right;
-    color: #111;
+    margin-top: 70px;
+
 }
 
-/*IMG*/
+/*IMGS*/
 #hzpic {
     margin-top: 30px;
     float: left;
@@ -216,4 +218,97 @@ img {
     margin-left: 500px;
     margin-top: 10px;
 
+}
+
+.imgAI {
+    margin-left: 600px;
+}
+
+.strenghtsandweaknesses {
+    margin-left: 600px;
+}
+
+/*FAQ CSS*/
+.firstq {
+    border: 5px solid green;
+    padding: 20px;
+}
+
+.secondq {
+    border: 5px solid green;
+    padding: 20px;
+}
+
+.thirdq {
+    border: 5px solid green;
+    padding: 20px;
+}
+
+.fourthq {
+    border: 5px solid green;
+    padding: 20px;
+}
+
+.fifthq {
+    border: 5px solid green;
+    padding: 20px;
+}
+
+/*BLOG CSS*/
+.blog1 {
+    padding: 15px;
+    font-size: 20px;
+}
+
+.moreaboutme {
+    text-align: center;
+}
+
+
+/* Circle Progression Bar*/
+@keyframes growProgressBar {
+
+    0%,
+    33% {
+        --pgPercentage: 0;
+    }
+
+    100% {
+        --pgPercentage: var(--value);
+    }
+}
+
+@property --pgPercentage {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0;
+}
+
+div[role="progressbar"] {
+    --size: 12rem;
+    --fg: #369;
+    --bg: #def;
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+        conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 5);
+    color: var(--fg);
+    margin-top: 20px;
+}
+
+div[role="progressbar"]::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+}
+
+.circle {
+    margin-left: 650px;
 }
