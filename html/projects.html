@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samuele Poma - Projects</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="../js/tailwind-config.js"></script>
 </head>
@@ -13,7 +14,7 @@
 <script>
     // Initialize dataLayer and set default consent values
     window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
+    function gtag() { dataLayer.push(arguments); }
     gtag('consent', 'default', {
         'ad_user_data': 'denied',
         'ad_personalization': 'denied',
@@ -25,96 +26,104 @@
 </script>
 
 <body class="bg-white text-black dark:bg-gray-900 dark:text-white transition duration-300">
-    <!-- DYNAMIC HEADER COMPONENT -->
+    <!-- Dynamic Header Component -->
     <div id="header"></div>
 
-    <!-- PROJECTS PAGE HEADER -->
+    <!-- Projects Page Header -->
     <section class="p-12 bg-gradient-to-r from-green-400 to-blue-500 text-white">
         <h2 id="main-projects-title" class="text-5xl font-bold mb-6 text-center">My Projects</h2>
         <p class="text-lg text-center">Here you can find all the details about my projects, including descriptions,
             achievements, and technologies used.</p>
     </section>
 
-    <!-- PROJECT DETAILS -->
+    <!-- Project Details -->
     <section class="p-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- MuseTrail Project -->
         <div class="project-card border border-gray-300 rounded-lg p-6 bg-white dark:bg-gray-800 shadow-md transform transition duration-500 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-500"
-            data-project="musetrail">
+            data-project="musetrail" role="button" tabindex="0" aria-label="Show details for MuseTrail project">
             <div class="flex justify-between items-center">
                 <h3 class="text-3xl font-bold mb-4 transition duration-300 hover:text-blue-500">MuseTrail</h3>
-                <span class="bg-yellow-400 text-black px-3 py-1 rounded-full text-sm font-semibold">🏆
-                    Award-Winning</span>
+                <span class="bg-yellow-400 text-black px-3 py-1 rounded-full text-sm font-semibold"
+                    aria-label="Award-winning">🏆 Award-Winning</span>
             </div>
-            <p class="transition-transform duration-300 hover:-translate-y-1">A full-stack web application aimed at
-                reducing CO2 emissions among young adults by promoting sustainable digital habits.</p>
+            <p class="transition-transform duration-300 hover:-translate-y-1">
+                A full-stack web application aimed at reducing CO2 emissions among young adults by promoting sustainable
+                digital habits.
+            </p>
             <button
-                class="show-popup mt-4 px-4 py-2 bg-blue-500 text-white rounded shadow-lg transition duration-300 hover:bg-blue-700 hover:scale-110">Show
-                Images</button>
+                class="show-popup mt-4 px-4 py-2 bg-blue-500 text-white rounded shadow-lg transition duration-300 hover:bg-blue-700 hover:scale-110"
+                aria-label="Show images for MuseTrail">Show Images</button>
         </div>
 
         <!-- ChessGame Project -->
         <div class="project-card border border-gray-300 rounded-lg p-6 bg-white dark:bg-gray-800 shadow-md transform transition duration-500 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-500"
-            data-project="chessgame">
+            data-project="chessgame" role="button" tabindex="0" aria-label="Show details for ChessGame project">
             <div class="flex justify-between items-center">
                 <h3 class="text-3xl font-bold mb-4 transition duration-300 hover:text-blue-500">ChessGame</h3>
-                <span class="bg-purple-400 text-white px-3 py-1 rounded-full text-sm font-semibold">♟️ AI-Powered</span>
+                <span class="bg-purple-400 text-white px-3 py-1 rounded-full text-sm font-semibold"
+                    aria-label="AI-powered">♟️ AI-Powered</span>
             </div>
-            <p class="transition-transform duration-300 hover:-translate-y-1">A text-based chess game developed using
-                object-oriented programming principles and design patterns.</p>
+            <p class="transition-transform duration-300 hover:-translate-y-1">
+                A text-based chess game developed using object-oriented programming principles and design patterns.
+            </p>
             <button
-                class="show-popup mt-4 px-4 py-2 bg-blue-500 text-white rounded shadow-lg transition duration-300 hover:bg-blue-700 hover:scale-110">Show
-                Images</button>
+                class="show-popup mt-4 px-4 py-2 bg-blue-500 text-white rounded shadow-lg transition duration-300 hover:bg-blue-700 hover:scale-110"
+                aria-label="Show images for ChessGame">Show Images</button>
         </div>
 
         <!-- Laravel Project -->
         <div class="project-card border border-gray-300 rounded-lg p-6 bg-white dark:bg-gray-800 shadow-md transform transition duration-500 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-500"
-            data-project="laravelproject">
+            data-project="laravelproject" role="button" tabindex="0" aria-label="Show details for Laravel Project">
             <div class="flex justify-between items-center">
                 <h3 class="text-3xl font-bold mb-4 transition duration-300 hover:text-blue-500">Laravel Project</h3>
-                <span class="bg-green-400 text-white px-3 py-1 rounded-full text-sm font-semibold">⚡ Team
-                    Collaboration</span>
+                <span class="bg-green-400 text-white px-3 py-1 rounded-full text-sm font-semibold"
+                    aria-label="Team collaboration">⚡ Team Collaboration</span>
             </div>
-            <p class="transition-transform duration-300 hover:-translate-y-1">A collaborative project to develop
-                software for monitoring power usage and managing faulty transformers for Stedin.net.</p>
+            <p class="transition-transform duration-300 hover:-translate-y-1">
+                A collaborative project to develop software for monitoring power usage and managing faulty transformers
+                for Stedin.net.
+            </p>
             <button
-                class="show-popup mt-4 px-4 py-2 bg-blue-500 text-white rounded shadow-lg transition duration-300 hover:bg-blue-700 hover:scale-110">Show
-                Images</button>
+                class="show-popup mt-4 px-4 py-2 bg-blue-500 text-white rounded shadow-lg transition duration-300 hover:bg-blue-700 hover:scale-110"
+                aria-label="Show images for Laravel Project">Show Images</button>
         </div>
 
         <!-- OOP Project -->
         <div id="oopproject"
             class="project-card border border-gray-300 rounded-lg p-6 bg-white dark:bg-gray-800 shadow-md transform transition duration-500 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-500"
-            data-project="oopproject">
+            data-project="oopproject" role="button" tabindex="0" aria-label="Show details for OOP Project">
             <div class="flex justify-between items-center">
                 <h3 class="text-3xl font-bold mb-4 transition duration-300 hover:text-blue-500">OOP Project</h3>
-                <span class="bg-green-400 text-white px-3 py-1 rounded-full text-sm font-semibold">🎮 Game
-                    Development</span>
+                <span class="bg-green-400 text-white px-3 py-1 rounded-full text-sm font-semibold"
+                    aria-label="Game development">🎮 Game Development</span>
             </div>
-            <p class="transition-transform duration-300 hover:-translate-y-1">Designed and developed an educational game
-                for elementary schools in the Netherlands as part of a team project.</p>
+            <p class="transition-transform duration-300 hover:-translate-y-1">
+                Designed and developed an educational game for elementary schools in the Netherlands as part of a team
+                project.
+            </p>
             <button
-                class="show-popup mt-4 px-4 py-2 bg-blue-500 text-white rounded shadow-lg transition duration-300 hover:bg-blue-700 hover:scale-110">Show
-                Images</button>
+                class="show-popup mt-4 px-4 py-2 bg-blue-500 text-white rounded shadow-lg transition duration-300 hover:bg-blue-700 hover:scale-110"
+                aria-label="Show images for OOP Project">Show Images</button>
         </div>
     </section>
 
     <!-- Pop-Up Modal -->
-    <div id="popup-modal" class="hidden fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
+    <div id="popup-modal" class="hidden fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
+        role="dialog" aria-modal="true" aria-labelledby="popup-title">
         <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg max-w-lg relative">
             <button id="close-popup"
-                class="absolute top-2 right-2 text-red-500 hover:text-pink-700 text-3xl font-bold transition-transform transform hover:scale-125">
-                &times;
-            </button>
+                class="absolute top-2 right-2 text-red-500 hover:text-pink-700 text-3xl font-bold transition-transform transform hover:scale-125"
+                aria-label="Close popup">&times;</button>
             <h3 id="popup-title" class="text-3xl font-bold mb-4"></h3>
             <p id="popup-description" class="mb-4"></p>
             <div id="popup-images" class="grid grid-cols-2 gap-4"></div>
         </div>
     </div>
 
-    <!-- FOOTER -->
+    <!-- Footer -->
     <div id="footer"></div>
 
-    <!-- SCRIPTS -->
+    <!-- Scripts -->
     <script src="../js/loadComponents.js"></script>
 </body>
 

@@ -52,7 +52,7 @@ function initializeDarkModeToggle() {
     function updateToggle() {
         if (document.documentElement.classList.contains("dark")) {
             // In dark mode, move the indicator to the right edge
-            indicator.classList.add("translate-x-10"); // 2.75rem (~44px)
+            indicator.classList.add("translate-x-10"); // Approximately 44px
             indicator.innerHTML = "☀️";
             indicator.classList.remove("bg-blue-950");
             indicator.classList.add("bg-yellow-400");
@@ -133,10 +133,11 @@ function initializeProjectPopups() {
                 popupDescription.textContent = details.description;
                 popupImages.innerHTML = ''; // Clear existing images
 
-                // Display the images
+                // Display the images with alt text for accessibility
                 details.images.forEach(imgSrc => {
                     const imageElement = document.createElement('img');
                     imageElement.src = imgSrc;
+                    imageElement.alt = details.title + " image";
                     imageElement.classList.add('rounded-lg', 'shadow-lg', 'max-w-full', 'h-auto');
                     popupImages.appendChild(imageElement);
                 });
@@ -163,31 +164,44 @@ function initializeProjectPopups() {
     });
 }
 
+// Initialize contact modal functionality
 function initializeContactModal() {
     const contactLinks = document.querySelectorAll(".contact-link");
     const modal = document.getElementById("contact-modal");
+    const modalContent = document.getElementById("contact-modal-content");
     const closeModalButton = document.getElementById("close-contact-modal");
 
-    if (contactLinks && modal && closeModalButton) {
+    if (contactLinks && modal && modalContent && closeModalButton) {
         contactLinks.forEach(link => {
             link.addEventListener("click", (e) => {
                 e.preventDefault();
+                // Remove initial transition classes
                 modal.classList.remove("hidden");
+                // Use a timeout to allow the transition to occur
+                setTimeout(() => {
+                    modalContent.classList.remove("scale-95", "opacity-0");
+                }, 10);
             });
         });
-        closeModalButton.addEventListener("click", () => {
-            modal.classList.add("hidden");
-        });
-        // Chiude il modal cliccando fuori dal contenuto
+        // Function to close the modal with a transition
+        function closeModal() {
+            // Add classes for closing transition
+            modalContent.classList.add("scale-95", "opacity-0");
+            // After the transition, hide the modal
+            setTimeout(() => {
+                modal.classList.add("hidden");
+            }, 300);
+        }
+        closeModalButton.addEventListener("click", closeModal);
         modal.addEventListener("click", (e) => {
             if (e.target === modal) {
-                modal.classList.add("hidden");
+                closeModal();
             }
         });
     }
 }
 
-// Synchronize theme across pages when it is changed in another tab
+// Synchronize theme across pages when changed in another tab
 window.addEventListener("storage", () => {
     applySavedTheme();
 });

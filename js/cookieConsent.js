@@ -1,7 +1,7 @@
 // cookieConsent.js
 
 // Dynamically load the Cookie Consent CSS from CDN
-(function() {
+(function () {
     // Create and append the link element for the CSS
     var link = document.createElement("link");
     link.rel = "stylesheet";
@@ -11,9 +11,9 @@
     // Create and append the script element for the Cookie Consent JS
     var script = document.createElement("script");
     script.src = "https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js";
-    script.onload = function() {
+    script.onload = function () {
         // Initialize the cookie consent banner after the window loads
-        window.addEventListener("load", function(){
+        window.addEventListener("load", function () {
             window.cookieconsent.initialise({
                 palette: {
                     popup: { background: "#000" },
@@ -27,7 +27,7 @@
                     href: "/privacy.html" // Update with your privacy policy URL
                 },
                 // Callback triggered when the consent status changes
-                onStatusChange: function(status, chosenBefore) {
+                onStatusChange: function (status, chosenBefore) {
                     // Check if the user has consented
                     if (this.hasConsented()) {
                         // Update consent mode: grant consent for ads and analytics

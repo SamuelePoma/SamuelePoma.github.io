@@ -1,15 +1,18 @@
 <!-- header.html -->
+
 <head>
+    <!-- Tailwind config should be loaded once in the head -->
     <script src="../js/tailwind-config.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <nav role="navigation" aria-label="Main Navigation" class="flex justify-between items-center p-6 bg-white dark:bg-gray-800 shadow-lg z-20 relative">
+    <nav role="navigation" aria-label="Main Navigation"
+        class="flex justify-between items-center p-6 bg-white dark:bg-gray-800 shadow-lg z-20 relative">
         <div class="flex items-center space-x-3">
-            <script src="../js/tailwind-config.js"></script>
             <!-- Logo Section -->
-            <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white text-xl font-bold">
+            <div
+                class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white text-xl font-bold">
                 SP
             </div>
             <span class="text-lg font-semibold text-black dark:text-white uppercase tracking-wide">Portfolio</span>
@@ -18,85 +21,117 @@
         <ul class="hidden md:flex space-x-6 items-center">
             <!-- Home -->
             <li class="relative group">
-                <a href="../html/index.html" class="text-lg font-semibold text-black dark:text-white uppercase tracking-wide hover:scale-110 transition-transform">Home</a>
+                <a href="../html/index.html"
+                    class="text-lg font-semibold text-black dark:text-white uppercase tracking-wide hover:scale-110 transition-transform hover:underline">Home</a>
             </li>
             <div class="w-px h-6 bg-gray-400 dark:bg-gray-600"></div>
             <!-- About Me -->
             <li class="relative group">
-                <a href="../html/aboutMe.html" class="text-lg font-semibold text-black dark:text-white uppercase tracking-wide hover:scale-110 transition-transform">About Me</a>
+                <a href="../html/aboutMe.html"
+                    class="text-lg font-semibold text-black dark:text-white uppercase tracking-wide hover:scale-110 transition-transform hover:underline">About
+                    Me</a>
             </li>
             <div class="w-px h-6 bg-gray-400 dark:bg-gray-600"></div>
             <!-- Projects -->
             <li class="relative group">
-                <a href="../html/projects.html" class="text-lg font-semibold text-black dark:text-white uppercase tracking-wide hover:scale-110 transition-transform">Projects</a>
+                <a href="../html/projects.html"
+                    class="text-lg font-semibold text-black dark:text-white uppercase tracking-wide hover:scale-110 transition-transform hover:underline">Projects</a>
             </li>
             <div class="w-px h-6 bg-gray-400 dark:bg-gray-600"></div>
             <!-- Blog -->
             <li class="relative group">
-                <a href="../html/blog.html" class="text-lg font-semibold text-black dark:text-white uppercase tracking-wide hover:scale-110 transition-transform">Blog</a>
+                <a href="../html/blog.html"
+                    class="text-lg font-semibold text-black dark:text-white uppercase tracking-wide hover:scale-110 transition-transform hover:underline">Blog</a>
             </li>
             <div class="w-px h-6 bg-gray-400 dark:bg-gray-600"></div>
-            <!-- Contact: MODIFICA QUI -->
+            <!-- Contact -->
             <li class="relative group">
-                <a href="#" class="contact-link text-lg font-semibold text-black dark:text-white uppercase tracking-wide hover:scale-110 transition-transform">Contact</a>
+                <a href="#"
+                    class="contact-link text-lg font-semibold text-black dark:text-white uppercase tracking-wide hover:scale-110 transition-transform hover:underline">Contact</a>
             </li>
             <div class="w-px h-6 bg-gray-400 dark:bg-gray-600"></div>
             <!-- Download CV -->
             <li>
-                <a href="../assets/CV_Samuele_Poma.pdf" download class="px-4 py-2 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700 transition-transform transform hover:scale-110 uppercase tracking-wide">Download CV</a>
+                <a href="../assets/CV_Samuele_Poma.pdf" download
+                    class="px-4 py-2 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700 transition-transform transform hover:scale-110 uppercase tracking-wide hover:underline">Download
+                    CV</a>
             </li>
         </ul>
         <!-- Mobile Navigation Menu Button -->
         <button id="mobile-menu-toggle" aria-label="Toggle mobile menu" class="md:hidden focus:outline-none">
             <svg class="w-8 h-8 text-black dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                </path>
             </svg>
         </button>
         <!-- Dark Mode Toggle Button -->
         <div class="flex justify-center items-center ml-4">
-            <button id="theme-toggle" aria-label="Toggle dark mode" class="relative w-20 h-10 bg-gray-300 dark:bg-gray-700 rounded-full shadow-inner transition-colors duration-300 flex items-center">
-                <span id="toggle-indicator" class="absolute left-1 top-1 w-8 h-8 bg-blue-950 rounded-full shadow-lg transform transition-all duration-500 flex items-center justify-center text-xl">🌙</span>
+            <button id="theme-toggle" aria-label="Toggle dark mode"
+                class="relative w-20 h-10 bg-gray-300 dark:bg-gray-700 rounded-full shadow-inner transition-colors duration-300 flex items-center">
+                <span id="toggle-indicator"
+                    class="absolute left-1 top-1 w-8 h-8 bg-blue-950 rounded-full shadow-lg transform transition-all duration-500 flex items-center justify-center text-xl">🌙</span>
             </button>
         </div>
         <!-- Mobile Navigation Menu -->
         <div id="mobile-menu" class="absolute top-full left-0 w-full bg-white dark:bg-gray-800 shadow-lg hidden">
             <ul class="flex flex-col space-y-4 p-4">
                 <li>
-                    <a href="../html/index.html" class="text-lg font-semibold text-black dark:text-white uppercase tracking-wide hover:scale-110 transition-transform">Home</a>
+                    <a href="../html/index.html"
+                        class="text-lg font-semibold text-black dark:text-white uppercase tracking-wide hover:scale-110 transition-transform hover:underline">Home</a>
                 </li>
                 <li>
-                    <a href="../html/aboutMe.html" class="text-lg font-semibold text-black dark:text-white uppercase tracking-wide hover:scale-110 transition-transform">About Me</a>
+                    <a href="../html/aboutMe.html"
+                        class="text-lg font-semibold text-black dark:text-white uppercase tracking-wide hover:scale-110 transition-transform hover:underline">About
+                        Me</a>
                 </li>
                 <li>
-                    <a href="../html/projects.html" class="text-lg font-semibold text-black dark:text-white uppercase tracking-wide hover:scale-110 transition-transform">Projects</a>
+                    <a href="../html/projects.html"
+                        class="text-lg font-semibold text-black dark:text-white uppercase tracking-wide hover:scale-110 transition-transform hover:underline">Projects</a>
                 </li>
                 <li>
-                    <a href="../html/blog.html" class="text-lg font-semibold text-black dark:text-white uppercase tracking-wide hover:scale-110 transition-transform">Blog</a>
+                    <a href="../html/blog.html"
+                        class="text-lg font-semibold text-black dark:text-white uppercase tracking-wide hover:scale-110 transition-transform hover:underline">Blog</a>
                 </li>
-                <!-- Contact per Mobile: MODIFICA QUI -->
+                <!-- Mobile Contact Link -->
                 <li>
-                    <a href="#" class="contact-link text-lg font-semibold text-black dark:text-white uppercase tracking-wide hover:scale-110 transition-transform">Contact</a>
+                    <a href="#"
+                        class="contact-link text-lg font-semibold text-black dark:text-white uppercase tracking-wide hover:scale-110 transition-transform hover:underline">Contact</a>
                 </li>
                 <li>
-                    <a href="../assets/CV_Samuele_Poma.pdf" download class="px-4 py-2 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700 transition-transform transform hover:scale-110 uppercase tracking-wide">Download CV</a>
+                    <a href="../assets/CV_Samuele_Poma.pdf" download
+                        class="px-4 py-2 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700 transition-transform transform hover:scale-110 uppercase tracking-wide hover:underline">Download
+                        CV</a>
                 </li>
             </ul>
         </div>
     </nav>
+
     <!-- Contact Modal Popup -->
-    <div id="contact-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-        <div class="bg-white dark:bg-gray-800 p-8 rounded-lg relative max-w-md w-full">
+    <!-- Modified modal to force dark background and white text -->
+    <div id="contact-modal" class="hidden fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
+        role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
+        <div id="contact-modal-content"
+            class="bg-gray-900 text-white rounded-xl shadow-2xl p-8 max-w-lg w-full relative transform transition-all duration-300 scale-95 opacity-0">
             <button id="close-contact-modal"
-                class="absolute top-2 right-2 text-xl text-gray-600 hover:text-gray-900">&times;</button>
-            <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
-            <p class="mb-4">Feel free to reach out via any of the following channels:</p>
-            <ul class="space-y-2">
-                <li><strong>Email:</strong> <a href="mailto:samuelepoma45@gmail.com"
-                        class="text-blue-600 hover:underline">samuelepoma45@gmail.com</a></li>
-                <li><strong>GitHub:</strong> <a href="https://github.com/SamuelePoma" target="_blank"
-                        class="text-blue-600 hover:underline">SamuelePoma</a></li>
-                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/samuelepoma" target="_blank"
-                        class="text-blue-600 hover:underline">Samuele Poma</a></li>
+                class="absolute top-4 right-4 text-red-500 hover:text-pink-700 text-3xl font-bold transition-transform transform hover:scale-125"
+                aria-label="Close contact modal">&times;</button>
+            <h2 id="contact-modal-title" class="text-3xl font-extrabold mb-6 text-center">Get in Touch</h2>
+            <p class="mb-6 text-center">
+                I’d love to hear from you! Reach out via email or connect with me on GitHub and LinkedIn.
+            </p>
+            <ul class="space-y-4">
+                <li class="text-lg text-center">
+                    <strong>Email:</strong> <a href="mailto:samuelepoma45@gmail.com"
+                        class="text-blue-600 hover:underline">samuelepoma45@gmail.com</a>
+                </li>
+                <li class="text-lg text-center">
+                    <strong>GitHub:</strong> <a href="https://github.com/SamuelePoma" target="_blank"
+                        class="text-blue-600 hover:underline">SamuelePoma</a>
+                </li>
+                <li class="text-lg text-center">
+                    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/samuelepoma" target="_blank"
+                        class="text-blue-600 hover:underline">Samuele Poma</a>
+                </li>
             </ul>
         </div>
     </div>

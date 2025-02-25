@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - Samuele Poma</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="../js/tailwind-config.js"></script>
 </head>
@@ -13,7 +14,7 @@
 <script>
     // Initialize dataLayer and set default consent values
     window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
+    function gtag() { dataLayer.push(arguments); }
     gtag('consent', 'default', {
         'ad_user_data': 'denied',
         'ad_personalization': 'denied',
@@ -25,17 +26,17 @@
 </script>
 
 <body class="bg-white text-black dark:bg-gray-900 dark:text-white transition duration-300">
-    <!-- DYNAMIC HEADER COMPONENT -->
+    <!-- Dynamic Header Component -->
     <div id="header"></div>
 
-    <!-- PAGE HEADER -->
+    <!-- Page Header -->
     <section class="p-12 bg-gradient-to-r from-purple-500 to-pink-500 text-white text-center animate-fadeIn">
         <h1 class="text-5xl font-bold mb-4" data-lang="about_header">About Me</h1>
         <p class="text-lg" data-lang="about_intro">Explore my academic journey, professional experiences, and personal
             interests.</p>
     </section>
 
-    <!-- PERSONAL DESCRIPTION -->
+    <!-- Personal Description -->
     <section class="p-12 bg-white dark:bg-gray-800 text-black dark:text-white">
         <h2 class="text-4xl font-bold mb-4 text-center" data-lang="who_am_i">Who Am I?</h2>
         <p class="text-lg leading-relaxed max-w-4xl mx-auto text-center animate-slideUp" data-lang="who_am_i_desc">
@@ -48,7 +49,7 @@
         </p>
     </section>
 
-    <!-- BADGES SECTION -->
+    <!-- Badges Section -->
     <section class="p-12 bg-gray-100 dark:bg-gray-900 text-black dark:text-white text-center">
         <h2 class="text-4xl font-bold mb-4" data-lang="achievements">Achievements & Hobbies</h2>
         <div class="flex flex-wrap justify-center gap-4 animate-bounce">
@@ -63,7 +64,7 @@
         </div>
     </section>
 
-    <!-- IT WORK EXPERIENCE -->
+    <!-- IT Work Experience -->
     <section class="p-12 bg-gradient-to-r from-blue-500 to-indigo-500 text-white">
         <h2 class="text-4xl font-bold mb-4 text-center animate-slideUp" data-lang="it_experience">IT Work Experience
         </h2>
@@ -84,7 +85,7 @@
         </div>
     </section>
 
-    <!-- OTHER WORK EXPERIENCE -->
+    <!-- Other Work Experience -->
     <section class="p-12 bg-white dark:bg-gray-800 text-black dark:text-white">
         <h2 class="text-4xl font-bold mb-4 text-center" data-lang="otherExpe">Other Experiences & Personal Information
         </h2>
@@ -110,10 +111,10 @@
         </div>
     </section>
 
-    <!-- FOOTER COMPONENT -->
+    <!-- Footer Component -->
     <div id="footer"></div>
 
-    <!-- SCRIPTS -->
+    <!-- Scripts -->
     <script src="../js/loadComponents.js"></script>
 </body>
 
