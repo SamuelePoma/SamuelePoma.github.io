@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Ensure compatibility with IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuele Poma's Portfolio</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Samuele Poma - Portfolio, projects, blog and professional journey in software engineering.">
+    <meta name="keywords" content="Samuele Poma, portfolio, projects, software engineering, ICT, blog">
+    <meta name="author" content="Samuele Poma">
+    <link rel="canonical" href="https://yourdomain.com/">
+
+    <!-- Security Meta Tags -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' https://cdn.tailwindcss.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://www.googletagmanager.com; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://cdnjs.cloudflare.com; img-src 'self' data:;">
+
+    <!-- JSON-LD Schema Markup -->
+    <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "name": "Samuele Poma",
+    "url": "https://yourdomain.com/",
+    "sameAs": [
+      "https://github.com/SamuelePoma",
+      "https://www.linkedin.com/in/samuelepoma"
+    ],
+    "jobTitle": "Software Engineer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "HZ University of Applied Sciences"
+    }
+  }
+  </script>
+
+    <!-- Tailwind CSS (loaded synchronously to avoid FOUC) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Particles.js (loaded with defer) -->
+    <script src="https://cdn.jsdelivr.net/gh/VincentGarreau/particles.js/particles.min.js" defer></script>
+    <script src="js/tailwind-config.js" defer></script>
+
+    <!-- Consent Mode default settings -->
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('consent', 'default', {
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied',
+            'wait_for_update': 500
+        });
+        gtag('js', new Date());
+    </script>
+</head>
+
+<body class="transition duration-300">
+    <!-- Skip Navigation Link for Accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only">Skip to content</a>
+
+    <!-- Particle Background (decorative) -->
+    <div id="particles-js" class="absolute inset-0 z-10" aria-hidden="true"></div>
+
+    <!-- Dynamic Header Component -->
+    <div id="header"></div>
+
+    <!-- Main Content wrapped in <main> for accessibility -->
+    <main id="main-content">
+        <!-- Hero Section with Parallax -->
+        <section
+            class="h-[90vh] flex items-center justify-center text-center bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 relative overflow-hidden">
+            <div class="absolute inset-0 bg-fixed bg-cover bg-center"></div>
+            <div class="text-black dark:text-white animate-fadeIn relative z-20">
+                <h2 class="text-5xl font-bold mb-4">Hi, I'm Samuele Poma</h2>
+                <p class="text-xl">Software Engineer | Problem Solver | Tech Enthusiast</p>
+                <a href="#projects"
+                    class="mt-6 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-transform transform hover:scale-105"
+                    aria-label="Explore My Work">
+                    Explore My Work
+                </a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="p-12 bg-white dark:bg-gray-800 text-black dark:text-white" role="region"
+            aria-labelledby="about-heading">
+            <h2 id="about-heading" class="text-4xl font-bold mb-4 text-center">About Me</h2>
+            <p class="text-lg leading-relaxed max-w-4xl mx-auto text-center">
+                I am a second-year ICT student specializing in software engineering at HZ University of Applied Sciences
+                in Middelburg, Netherlands.
+                I have a strong foundation in agile methodologies and teamwork, with experience in both front-end and
+                back-end development.
+                Skilled in problem-solving, critical thinking, and effective time management, with a keen interest in
+                sustainability and emerging technologies.
+            </p>
+        </section>
+
+        <!-- Projects Section with Hover Effect -->
+        <section id="projects" class="p-12 bg-gradient-to-r from-green-400 to-blue-500 text-white" role="region"
+            aria-labelledby="projects-heading">
+            <h2 id="projects-heading" class="text-4xl font-bold mb-8 text-center">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div onclick="window.location.href='projects.html#musetrail'"
+                    class="cursor-pointer p-6 bg-white dark:bg-gray-700 rounded-lg shadow-lg transform transition hover:scale-105 hover:rotate-x-6 hover:rotate-y-6 hover:shadow-2xl hover:-translate-y-1 text-black dark:text-white duration-500"
+                    role="button" tabindex="0" aria-label="View MuseTrail project details">
+                    <h3 class="text-2xl font-bold mb-2">MuseTrail</h3>
+                    <p>Full-stack web application aimed at reducing CO2 emissions among young adults.</p>
+                </div>
+                <div onclick="window.location.href='projects.html#chessgame'"
+                    class="cursor-pointer p-6 bg-white dark:bg-gray-700 rounded-lg shadow-lg transform transition hover:scale-105 hover:-rotate-x-6 hover:rotate-y-6 hover:shadow-2xl hover:-translate-y-1 text-black dark:text-white duration-500"
+                    role="button" tabindex="0" aria-label="View ChessGame project details">
+                    <h3 class="text-2xl font-bold mb-2">ChessGame</h3>
+                    <p>Text-based chess game implementing OOP principles and design patterns.</p>
+                </div>
+                <div onclick="window.location.href='projects.html#laravelproject'"
+                    class="cursor-pointer p-6 bg-white dark:bg-gray-700 rounded-lg shadow-lg transform transition hover:scale-105 hover:rotate-x-6 hover:rotate-y-6 hover:shadow-2xl hover:-translate-y-1 text-black dark:text-white duration-500"
+                    role="button" tabindex="0" aria-label="View Laravel Project details">
+                    <h3 class="text-2xl font-bold mb-2">Laravel Project</h3>
+                    <p>Collaborative project for monitoring power usage and faulty transformers.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Dynamic Footer Component -->
+    <div id="footer"></div>
+
+    <!-- Scripts (loaded with defer) -->
+    <script src="js/particles-config.js" defer></script>
+    <script src="js/loadComponents.js" defer></script>
+    <script src="js/cookieConsent.js" defer></script>
+
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(function (registration) {
+                    console.log('Service Worker registered with scope:', registration.scope);
+                })
+                .catch(function (error) {
+                    console.log('Service Worker registration failed:', error);
+                });
+        }
+    </script>
+</body>
+
+</html>
