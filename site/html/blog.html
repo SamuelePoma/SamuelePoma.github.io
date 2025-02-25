@@ -8,6 +8,37 @@
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="js/tailwind-config.js"></script>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Samuele Poma - Portfolio, projects, blog and professional journey in software engineering.">
+  <meta name="keywords" content="Samuele Poma, portfolio, projects, software engineering, ICT, blog">
+  <meta name="author" content="Samuele Poma">
+  <link rel="canonical" href="https://samuelepoma-portfolio.netlify.app/blog.html">
+
+  <!-- Security Meta Tags -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' https://cdn.tailwindcss.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://www.googletagmanager.com; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://cdnjs.cloudflare.com; img-src 'self' data:;">
+
+  <!-- JSON-LD Schema Markup -->
+  <script type="application/ld+json">
+{
+"@context": "http://schema.org",
+"@type": "Person",
+"name": "Samuele Poma",
+"url": "https://yourdomain.com/",
+"sameAs": [
+"https://github.com/SamuelePoma",
+"https://www.linkedin.com/in/samuelepoma"
+],
+"jobTitle": "Software Engineer",
+"worksFor": {
+"@type": "Organization",
+"name": "HZ University of Applied Sciences"
+}
+}
+</script>
+
 </head>
 
 <!-- Consent Mode default settings: block analytics and ads until consent is given -->
@@ -28,40 +59,43 @@
 <body class="bg-white text-black dark:bg-gray-900 dark:text-white transition duration-300">
   <!-- Dynamic Header Component -->
   <div id="header"></div>
+  <!-- Main Content wrapped in <main> for accessibility -->
+  <main id="main-content">
+    <!-- Blog Hero Section -->
+    <section class="p-12 bg-gradient-to-r from-indigo-500 to-blue-500 text-white text-center animate-fadeIn">
+      <h1 class="text-5xl font-bold mb-4">Blog</h1>
+      <p class="text-lg">Insights, updates, and my journey in the world of technology.</p>
+    </section>
 
-  <!-- Blog Hero Section -->
-  <section class="p-12 bg-gradient-to-r from-indigo-500 to-blue-500 text-white text-center animate-fadeIn">
-    <h1 class="text-5xl font-bold mb-4">Blog</h1>
-    <p class="text-lg">Insights, updates, and my journey in the world of technology.</p>
-  </section>
-
-  <!-- Blog Posts Section -->
-  <section class="p-12">
-    <div class="max-w-4xl mx-auto space-y-8">
-      <!-- Single Blog Post Card -->
-      <div class="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-lg animate-slideUp" role="article">
-        <h2 class="text-3xl font-bold mb-2">Python University Project Launch</h2>
-        <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Posted on February 24, 2025</p>
-        <p class="text-lg mb-4">
-          Today, I kicked off a new project at university with my agile team. We are utilizing Python along with
-          libraries like pandas and matplotlib for data analysis and visualization. This project will allow us to
-          explore innovative data analysis methodologies and optimize processes through automation and machine learning.
-          I am excited about the potential of this approach and look forward to sharing our results!
-        </p>
-        <!-- Social Sharing Buttons -->
-        <div class="flex space-x-4">
-          <a href="https://twitter.com/intent/tweet?text=I just started a new university project using Python, pandas, and matplotlib!&url=https://yourdomain.com/blog.html"
-            target="_blank" class="text-blue-500 hover:underline" aria-label="Share on Twitter">Twitter</a>
-          <a href="https://www.facebook.com/sharer/sharer.php?u=https://yourdomain.com/blog.html" target="_blank"
-            class="text-blue-500 hover:underline" aria-label="Share on Facebook">Facebook</a>
-          <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://yourdomain.com/blog.html" target="_blank"
-            class="text-blue-500 hover:underline" aria-label="Share on LinkedIn">LinkedIn</a>
+    <!-- Blog Posts Section -->
+    <section class="p-12">
+      <div class="max-w-4xl mx-auto space-y-8">
+        <!-- Single Blog Post Card -->
+        <div class="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-lg animate-slideUp" role="article">
+          <h2 class="text-3xl font-bold mb-2">Python University Project Launch</h2>
+          <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Posted on February 24, 2025</p>
+          <p class="text-lg mb-4">
+            Today, I kicked off a new project at university with my agile team. We are utilizing Python along with
+            libraries like pandas and matplotlib for data analysis and visualization. This project will allow us to
+            explore innovative data analysis methodologies and optimize processes through automation and machine
+            learning.
+            I am excited about the potential of this approach and look forward to sharing our results!
+          </p>
+          <!-- Social Sharing Buttons -->
+          <div class="flex space-x-4">
+            <a href="https://twitter.com/intent/tweet?text=I just started a new university project using Python, pandas, and matplotlib!&url=https://yourdomain.com/blog.html"
+              target="_blank" class="text-blue-500 hover:underline" aria-label="Share on Twitter">Twitter</a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://yourdomain.com/blog.html" target="_blank"
+              class="text-blue-500 hover:underline" aria-label="Share on Facebook">Facebook</a>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://yourdomain.com/blog.html"
+              target="_blank" class="text-blue-500 hover:underline" aria-label="Share on LinkedIn">LinkedIn</a>
+          </div>
+          <a href="#" class="text-blue-600 hover:underline mt-2 inline-block"
+            aria-label="Read more about Python University Project Launch">Read More</a>
         </div>
-        <a href="#" class="text-blue-600 hover:underline mt-2 inline-block"
-          aria-label="Read more about Python University Project Launch">Read More</a>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- Dynamic Footer Component -->
   <div id="footer"></div>

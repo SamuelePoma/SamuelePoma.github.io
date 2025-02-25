@@ -1,35 +1,36 @@
-// loadComponents.js
-
 // Wait for the DOM content to be loaded
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
     // Load header and footer, then initialize functionalities
-    loadHeaderFooter().then(() => {
-        applySavedTheme();
-        initializeDarkModeToggle();
-        initializeMobileNav();
-        initializeProjectPopups();
-        initializeContactModal();
-    });
+    await loadHeaderFooter();
+    applySavedTheme();
+    initializeDarkModeToggle();
+    initializeMobileNav();
+    initializeProjectPopups();
+    initializeContactModal();
     loadFooter();
-});
-
-// Load dynamic header content and return a Promise so we can chain initialization
-function loadHeaderFooter() {
-    return fetch("components/header.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("header").innerHTML = data;
-        });
-}
-
-// Load dynamic footer content
-function loadFooter() {
-    fetch("components/footer.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("footer").innerHTML = data;
-        });
-}
+  });
+  
+  // Load dynamic header content using async/await for proper timing
+  async function loadHeaderFooter() {
+    try {
+      const response = await fetch("components/header.html");
+      const data = await response.text();
+      document.getElementById("header").innerHTML = data;
+    } catch (error) {
+      console.error("Error loading header:", error);
+    }
+  }
+  
+  // Load dynamic footer content using async/await
+  async function loadFooter() {
+    try {
+      const response = await fetch("components/footer.html");
+      const data = await response.text();
+      document.getElementById("footer").innerHTML = data;
+    } catch (error) {
+      console.error("Error loading footer:", error);
+    }
+  }
 
 // Apply the saved theme from localStorage
 function applySavedTheme() {
@@ -73,15 +74,28 @@ function initializeDarkModeToggle() {
 }
 
 // Initialize mobile navigation toggle functionality
+// Initialize mobile navigation toggle functionality
 function initializeMobileNav() {
-    const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
-    const mobileMenu = document.getElementById("mobile-menu");
+  const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const mainContent = document.getElementById("main-content");
 
-    if (mobileMenuToggle && mobileMenu) {
-        mobileMenuToggle.addEventListener("click", () => {
-            mobileMenu.classList.toggle("hidden");
-        });
-    }
+  if (mobileMenuToggle && mobileMenu && mainContent) {
+    mobileMenuToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+      // Shift main content down when the mobile menu opens
+      mainContent.classList.toggle("translate-y-32");
+    });
+
+    // Close the menu when a link is clicked
+    const mobileLinks = mobileMenu.querySelectorAll("a");
+    mobileLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+        mainContent.classList.remove("translate-y-32");
+      });
+    });
+  }
 }
 
 // Initialize project popups for project cards
