@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Samuele Poma</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/tailwind-config.js"></script>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-20VNX32D8L"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-20VNX32D8L');
+</script>
+
+<body class="bg-white text-black dark:bg-gray-900 dark:text-white transition duration-300">
+    <!-- DYNAMIC HEADER COMPONENT -->
+    <div id="header"></div>
+
+    <!-- PAGE HEADER -->
+    <section class="p-12 bg-gradient-to-r from-purple-500 to-pink-500 text-white text-center animate-fadeIn">
+        <h1 class="text-5xl font-bold mb-4" data-lang="about_header">About Me</h1>
+        <p class="text-lg" data-lang="about_intro">Explore my academic journey, professional experiences, and personal
+            interests.</p>
+    </section>
+
+    <!-- PERSONAL DESCRIPTION -->
+    <section class="p-12 bg-white dark:bg-gray-800 text-black dark:text-white">
+        <h2 class="text-4xl font-bold mb-4 text-center" data-lang="who_am_i">Who Am I?</h2>
+        <p class="text-lg leading-relaxed max-w-4xl mx-auto text-center animate-slideUp" data-lang="who_am_i_desc">
+            I am Samuele Poma, an ICT student at HZ University of Applied Sciences specializing in software engineering.
+            I am a graduate from a scientific high school, with strong determination for professional growth. I quickly
+            integrate into new work environments due to strong communication skills, teamwork aptitude, and a proactive
+            attitude. I demonstrate motivation, initiative, organizational and planning skills, resilience under stress,
+            and operational and decision-making autonomy. Passionate about technology and sustainability, I strive to
+            develop impactful digital solutions.
+        </p>
+    </section>
+
+    <!-- BADGES SECTION -->
+    <section class="p-12 bg-gray-100 dark:bg-gray-900 text-black dark:text-white text-center">
+        <h2 class="text-4xl font-bold mb-4" data-lang="achievements">Achievements & Hobbies</h2>
+        <div class="flex flex-wrap justify-center gap-4 animate-bounce">
+            <span class="px-6 py-3 bg-blue-500 text-white rounded-full shadow-lg hover:scale-110 transition-transform"
+                data-lang="volleyball">🏆 Volleyball Tournament Winner (2 times)</span>
+            <span class="px-6 py-3 bg-green-500 text-white rounded-full shadow-lg hover:scale-110 transition-transform"
+                data-lang="unhcr_volunteer">🤝 Volunteer at UNHCR</span>
+            <span class="px-6 py-3 bg-green-500 text-white rounded-full shadow-lg hover:scale-110 transition-transform"
+                data-lang="save_children_volunteer">🤝 Volunteer at Save the Children</span>
+            <span class="px-6 py-3 bg-red-500 text-white rounded-full shadow-lg hover:scale-110 transition-transform"
+                data-lang="lifeguard">🌊 Certified Pool Lifeguard</span>
+        </div>
+    </section>
+
+    <!-- IT WORK EXPERIENCE -->
+    <section class="p-12 bg-gradient-to-r from-blue-500 to-indigo-500 text-white">
+        <h2 class="text-4xl font-bold mb-4 text-center animate-slideUp" data-lang="it_experience">IT Work Experience
+        </h2>
+        <div class="space-y-4">
+            <div class="bg-white dark:bg-gray-800 text-black dark:text-white p-6 rounded-lg shadow-lg animate-fadeIn">
+                <h3 class="text-2xl font-bold" data-lang="rondinella">Web Development, Mailing & Marketing Manager -
+                    Rondinella & Partners S.R.L. (2020-2022)</h3>
+                <p data-lang="rondinella_desc">Increased website engagement by 30% through targeted email marketing
+                    strategies, managing digital marketing campaigns and web development projects with professionalism
+                    and effectiveness.</p>
+            </div>
+            <div class="bg-white dark:bg-gray-800 text-black dark:text-white p-6 rounded-lg shadow-lg animate-fadeIn">
+                <h3 class="text-2xl font-bold" data-lang="artemis">Consulting Office Employee - Artemis S.R.L.
+                    (2019-2020)</h3>
+                <p data-lang="artemis_desc">Supported company management through direct communication and administrative
+                    duties to enhance operational efficiency.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- OTHER WORK EXPERIENCE -->
+    <section class="p-12 bg-white dark:bg-gray-800 text-black dark:text-white">
+        <h2 class="text-4xl font-bold mb-4 text-center" data-lang="otherExpe">Other Experiences & Personal Information
+        </h2>
+        <div class="space-y-4">
+            <div class="p-6 bg-gray-100 dark:bg-gray-700 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold" data-lang="Falsaperla">Waiter and Kitchen Assistant - Pasticceria
+                    Falsaperla 3.0 (2022)</h3>
+                <p>Assisted in both kitchen and front-of-house duties, maintaining high standards of service and food
+                    preparation.</p>
+            </div>
+            <div class="p-6 bg-gray-100 dark:bg-gray-700 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold" data-lang="securityOff">Security Officer - Security Service S.R.L. (2022)
+                </h3>
+                <p>Ensured safety and security during events and routine operations by managing access control and
+                    monitoring premises.</p>
+            </div>
+            <div class="p-6 bg-gray-100 dark:bg-gray-700 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold" data-lang="Fassoneria">Head Waiter - La Fassoneria Nicolosi (2019-2020)
+                </h3>
+                <p>Led the front-of-house team, managed staff schedules, and ensured an excellent dining experience for
+                    customers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER COMPONENT -->
+    <div id="footer"></div>
+
+    <!-- SCRIPTS -->
+    <script src="../js/loadComponents.js"></script>
+</body>
+
+</html>

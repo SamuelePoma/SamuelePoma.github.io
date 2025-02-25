@@ -1,0 +1,99 @@
+<head>
+    <script src="../js/tailwind-config.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <nav role="navigation" aria-label="Main Navigation"
+        class="flex justify-between items-center p-6 bg-white dark:bg-gray-800 shadow-lg z-20 relative">
+        <div class="flex items-center space-x-3">
+            <script src="../js/tailwind-config.js"></script>
+
+            <!-- Logo Section -->
+            <div
+                class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white text-xl font-bold">
+                SP</div>
+            <span class="text-lg font-semibold text-black dark:text-white uppercase tracking-wide">Portfolio</span>
+        </div>
+        <!-- Desktop Navigation Menu (hidden on mobile) -->
+        <ul class="hidden md:flex space-x-6 items-center">
+            <!-- Home -->
+            <li class="relative group">
+                <a href="../html/index.html"
+                    class="text-lg font-semibold text-black dark:text-white uppercase tracking-wide hover:scale-110 transition-transform">Home</a>
+            </li>
+            <div class="w-px h-6 bg-gray-400 dark:bg-gray-600"></div>
+            <!-- About Me -->
+            <li class="relative group">
+                <a href="../html/aboutMe.html"
+                    class="text-lg font-semibold text-black dark:text-white uppercase tracking-wide hover:scale-110 transition-transform">About
+                    Me</a>
+            </li>
+            <div class="w-px h-6 bg-gray-400 dark:bg-gray-600"></div>
+            <!-- Projects -->
+            <li class="relative group">
+                <a href="../html/projects.html"
+                    class="text-lg font-semibold text-black dark:text-white uppercase tracking-wide hover:scale-110 transition-transform">Projects</a>
+            </li>
+            <div class="w-px h-6 bg-gray-400 dark:bg-gray-600"></div>
+            <!-- Contact -->
+            <li class="relative group">
+                <a href="../html/index.html#contact"
+                    class="text-lg font-semibold text-black dark:text-white uppercase tracking-wide hover:scale-110 transition-transform">Contact</a>
+            </li>
+            <div class="w-px h-6 bg-gray-400 dark:bg-gray-600"></div>
+            <!-- Download CV -->
+            <li>
+                <a href="../assets/CV_Samuele_Poma.pdf" download
+                    class="px-4 py-2 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700 transition-transform transform hover:scale-110 uppercase tracking-wide">Download
+                    CV</a>
+            </li>
+        </ul>
+        <!-- Mobile Menu Button (hamburger), visible su dispositivi mobili -->
+        <button id="mobile-menu-toggle" aria-label="Toggle mobile menu" class="md:hidden focus:outline-none">
+            <svg class="w-8 h-8 text-black dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                </path>
+            </svg>
+        </button>
+        <!-- Dark Mode Toggle Button -->
+        <div class="flex justify-center items-center ml-4">
+            <button id="theme-toggle" aria-label="Toggle dark mode"
+                class="relative w-20 h-10 bg-gray-300 dark:bg-gray-700 rounded-full shadow-inner transition-colors duration-300 flex items-center">
+                <span id="toggle-indicator"
+                    class="absolute left-1 top-1 w-8 h-8 bg-blue-950 rounded-full shadow-lg transform transition-all duration-500 flex items-center justify-center text-xl">🌙</span>
+            </button>
+        </div>
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="absolute top-full left-0 w-full bg-white dark:bg-gray-800 shadow-lg hidden">
+            <ul class="flex flex-col space-y-4 p-4">
+                <li>
+                    <a href="../html/index.html"
+                        class="text-lg font-semibold text-black dark:text-white uppercase tracking-wide hover:scale-110 transition-transform">Home</a>
+                </li>
+                <li>
+                    <a href="../html/aboutMe.html"
+                        class="text-lg font-semibold text-black dark:text-white uppercase tracking-wide hover:scale-110 transition-transform">About
+                        Me</a>
+                </li>
+                <li>
+                    <a href="../html/projects.html"
+                        class="text-lg font-semibold text-black dark:text-white uppercase tracking-wide hover:scale-110 transition-transform">Projects</a>
+                </li>
+                <li>
+                    <a href="../html/blog.html"
+                        class="text-lg font-semibold text-black dark:text-white uppercase tracking-wide hover:scale-110 transition-transform">Blog</a>
+                </li>
+                <li>
+                    <a href="../html/index.html#contact"
+                        class="text-lg font-semibold text-black dark:text-white uppercase tracking-wide hover:scale-110 transition-transform">Contact</a>
+                </li>
+                <li>
+                    <a href="../assets/CV_Samuele_Poma.pdf" download
+                        class="px-4 py-2 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700 transition-transform transform hover:scale-110 uppercase tracking-wide">Download
+                        CV</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</body>
