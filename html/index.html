@@ -3,13 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- Ensure compatibility with IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samuele Poma's Portfolio</title>
+
     <!-- SEO Meta Tags -->
     <meta name="description"
         content="Samuele Poma - Portfolio, projects, blog and professional journey in software engineering.">
     <meta name="keywords" content="Samuele Poma, portfolio, projects, software engineering, ICT, blog">
     <meta name="author" content="Samuele Poma">
+    <link rel="canonical" href="https://yourdomain.com/">
+
+    <!-- Security Meta Tags -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' https://cdn.tailwindcss.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://www.googletagmanager.com; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://cdnjs.cloudflare.com; img-src 'self' data:;">
 
     <!-- JSON-LD Schema Markup -->
     <script type="application/ld+json">
@@ -28,16 +36,15 @@
       "name": "HZ University of Applied Sciences"
     }
   }
-  </script>
+    </script>
 
-    <!-- Tailwind CSS and particles.js -->
+    <!-- Tailwind CSS and particles.js (loaded with defer for performance) -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-    <script src="../js/tailwind-config.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/VincentGarreau/particles.js/particles.min.js" defer></script>
+    <script src="../js/tailwind-config.js" defer></script>
 
-    <!-- Consent Mode default settings: block analytics and ads until consent is given -->
-    <script>
-        // Initialize dataLayer and set default consent values
+    <!-- Consent Mode default settings -->
+    <script defer>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('consent', 'default', {
@@ -45,15 +52,19 @@
             'ad_personalization': 'denied',
             'ad_storage': 'denied',
             'analytics_storage': 'denied',
-            'wait_for_update': 500 // Wait for consent update before processing tags
+            'wait_for_update': 500
         });
         gtag('js', new Date());
     </script>
 </head>
 
 <body class="transition duration-300">
+    <!-- Skip Navigation Link for Accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only">Skip to content</a>
+
     <!-- Particle Background (decorative) -->
     <div id="particles-js" class="absolute inset-0 z-10" aria-hidden="true"></div>
+
     <!-- Dynamic Header Component -->
     <div id="header"></div>
 
@@ -115,11 +126,10 @@
     <!-- Dynamic Footer Component -->
     <div id="footer"></div>
 
-    <!-- Scripts -->
-    <script src="../js/particles-config.js"></script>
-    <script src="../js/scripts.js"></script>
-    <script src="../js/loadComponents.js"></script>
-    <script src="../js/cookieConsent.js"></script>
+    <!-- Scripts (added defer to particles-config.js to ensure correct loading order) -->
+    <script src="../js/particles-config.js" defer></script>
+    <script src="../js/loadComponents.js" defer></script>
+    <script src="../js/cookieConsent.js" defer></script>
 
     <!-- Service Worker Registration -->
     <script>
