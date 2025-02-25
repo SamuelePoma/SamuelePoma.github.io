@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         initializeDarkModeToggle();
         initializeMobileNav();
         initializeProjectPopups();
+        initializeContactModal();
     });
     loadFooter();
 });
@@ -50,12 +51,13 @@ function initializeDarkModeToggle() {
     // Function to update toggle icon based on current theme
     function updateToggle() {
         if (document.documentElement.classList.contains("dark")) {
-            indicator.classList.add("translate-x-8");
+            // In dark mode, move the indicator to the right edge
+            indicator.classList.add("translate-x-10"); // 2.75rem (~44px)
             indicator.innerHTML = "☀️";
             indicator.classList.remove("bg-blue-950");
             indicator.classList.add("bg-yellow-400");
         } else {
-            indicator.classList.remove("translate-x-8");
+            indicator.classList.remove("translate-x-10");
             indicator.innerHTML = "🌙";
             indicator.classList.add("bg-blue-950");
             indicator.classList.remove("bg-yellow-400");
@@ -159,6 +161,30 @@ function initializeProjectPopups() {
             popupModal.classList.remove('flex');
         }
     });
+}
+
+function initializeContactModal() {
+    const contactLinks = document.querySelectorAll(".contact-link");
+    const modal = document.getElementById("contact-modal");
+    const closeModalButton = document.getElementById("close-contact-modal");
+
+    if (contactLinks && modal && closeModalButton) {
+        contactLinks.forEach(link => {
+            link.addEventListener("click", (e) => {
+                e.preventDefault();
+                modal.classList.remove("hidden");
+            });
+        });
+        closeModalButton.addEventListener("click", () => {
+            modal.classList.add("hidden");
+        });
+        // Chiude il modal cliccando fuori dal contenuto
+        modal.addEventListener("click", (e) => {
+            if (e.target === modal) {
+                modal.classList.add("hidden");
+            }
+        });
+    }
 }
 
 // Synchronize theme across pages when it is changed in another tab

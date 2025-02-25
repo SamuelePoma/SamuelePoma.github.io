@@ -9,14 +9,19 @@
     <script src="../js/tailwind-config.js"></script>
 </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-20VNX32D8L"></script>
+<!-- Consent Mode default settings: block analytics and ads until consent is given -->
 <script>
+    // Initialize dataLayer and set default consent values
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'ad_storage': 'denied',
+        'analytics_storage': 'denied',
+        'wait_for_update': 500 // Wait for consent update before processing tags
+    });
     gtag('js', new Date());
-
-    gtag('config', 'G-20VNX32D8L');
 </script>
 
 <body class="bg-white text-black dark:bg-gray-900 dark:text-white transition duration-300">

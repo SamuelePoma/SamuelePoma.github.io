@@ -6,29 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samuele Poma's Portfolio</title>
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Samuele Poma - Portfolio, projects, blog and professional journey in software engineering.">
+    <meta name="description"
+        content="Samuele Poma - Portfolio, projects, blog and professional journey in software engineering.">
     <meta name="keywords" content="Samuele Poma, portfolio, projects, software engineering, ICT, blog">
     <meta name="author" content="Samuele Poma">
 
     <!-- JSON-LD Schema Markup -->
     <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Person",
-    "name": "Samuele Poma",
-    "url": "https://yourdomain.com",
-    "sameAs": [
-      "https://github.com/SamuelePoma",
-      "https://www.linkedin.com/in/samuelepoma"
-    ],
-    "jobTitle": "Software Engineer",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "HZ University of Applied Sciences"
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Samuele Poma",
+      "url": "https://yourdomain.com",
+      "sameAs": [
+        "https://github.com/SamuelePoma",
+        "https://www.linkedin.com/in/samuelepoma"
+      ],
+      "jobTitle": "Software Engineer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "HZ University of Applied Sciences"
+      }
     }
-  }
-  </script>
+    </script>
 
+    <!-- Tailwind CSS and particles.js -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
     <script src="../js/tailwind-config.js"></script>
@@ -37,7 +39,7 @@
     <script>
         // Initialize dataLayer and set default consent values
         window.dataLayer = window.dataLayer || [];
-        function gtag(){ dataLayer.push(arguments); }
+        function gtag() { dataLayer.push(arguments); }
         gtag('consent', 'default', {
             'ad_user_data': 'denied',
             'ad_personalization': 'denied',
@@ -49,16 +51,6 @@
     </script>
 </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-20VNX32D8L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-20VNX32D8L');
-</script>
-
 <body class="transition duration-300">
     <!-- Particle Background -->
     <div id="particles-js" class="absolute inset-0 z-10"></div>
@@ -66,12 +58,14 @@
     <div id="header"></div>
 
     <!-- HERO SECTION WITH PARALLAX -->
-    <section class="h-screen flex items-center justify-center text-center bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 relative overflow-hidden">
+    <section
+        class="h-[90vh] flex items-center justify-center text-center bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 relative overflow-hidden">
         <div class="absolute inset-0 bg-fixed bg-cover bg-center"></div>
         <div class="text-black dark:text-white animate-fadeIn relative z-20">
             <h2 class="text-5xl font-bold mb-4">Hi, I'm Samuele Poma</h2>
             <p class="text-xl">Software Engineer | Problem Solver | Tech Enthusiast</p>
-            <a href="#projects" class="mt-6 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+            <a href="#projects"
+                class="mt-6 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
                 Explore My Work
             </a>
         </div>
@@ -81,9 +75,12 @@
     <section id="about" class="p-12 bg-white dark:bg-gray-800 text-black dark:text-white">
         <h2 class="text-4xl font-bold mb-4 text-center">About Me</h2>
         <p class="text-lg leading-relaxed max-w-4xl mx-auto text-center">
-            I am a second-year ICT student specializing in software engineering at HZ University of Applied Sciences in Middelburg, Netherlands.
-            I have a strong foundation in agile methodologies and teamwork, with experience in both front-end and back-end development.
-            Skilled in problem-solving, critical thinking, and effective time management, with a keen interest in sustainability and emerging technologies.
+            I am a second-year ICT student specializing in software engineering at HZ University of Applied Sciences in
+            Middelburg, Netherlands.
+            I have a strong foundation in agile methodologies and teamwork, with experience in both front-end and
+            back-end development.
+            Skilled in problem-solving, critical thinking, and effective time management, with a keen interest in
+            sustainability and emerging technologies.
         </p>
     </section>
 
@@ -91,15 +88,18 @@
     <section id="projects" class="p-12 bg-gradient-to-r from-green-400 to-blue-500 text-white">
         <h2 class="text-4xl font-bold mb-8 text-center">My Projects</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div onclick="window.location.href='projects.html#musetrail'" class="cursor-pointer p-6 bg-white dark:bg-gray-700 rounded-lg shadow-lg transform transition hover:scale-105 hover:rotate-x-6 hover:rotate-y-6 hover:shadow-2xl hover:-translate-y-1 text-black dark:text-white duration-500">
+            <div onclick="window.location.href='projects.html#musetrail'"
+                class="cursor-pointer p-6 bg-white dark:bg-gray-700 rounded-lg shadow-lg transform transition hover:scale-105 hover:rotate-x-6 hover:rotate-y-6 hover:shadow-2xl hover:-translate-y-1 text-black dark:text-white duration-500">
                 <h3 class="text-2xl font-bold mb-2">MuseTrail</h3>
                 <p>Full-stack web application aimed at reducing CO2 emissions among young adults.</p>
             </div>
-            <div onclick="window.location.href='projects.html#chessgame'" class="cursor-pointer p-6 bg-white dark:bg-gray-700 rounded-lg shadow-lg transform transition hover:scale-105 hover:-rotate-x-6 hover:rotate-y-6 hover:shadow-2xl hover:-translate-y-1 text-black dark:text-white duration-500">
+            <div onclick="window.location.href='projects.html#chessgame'"
+                class="cursor-pointer p-6 bg-white dark:bg-gray-700 rounded-lg shadow-lg transform transition hover:scale-105 hover:-rotate-x-6 hover:rotate-y-6 hover:shadow-2xl hover:-translate-y-1 text-black dark:text-white duration-500">
                 <h3 class="text-2xl font-bold mb-2">ChessGame</h3>
                 <p>Text-based chess game implementing OOP principles and design patterns.</p>
             </div>
-            <div onclick="window.location.href='projects.html#laravelproject'" class="cursor-pointer p-6 bg-white dark:bg-gray-700 rounded-lg shadow-lg transform transition hover:scale-105 hover:rotate-x-6 hover:rotate-y-6 hover:shadow-2xl hover:-translate-y-1 text-black dark:text-white duration-500">
+            <div onclick="window.location.href='projects.html#laravelproject'"
+                class="cursor-pointer p-6 bg-white dark:bg-gray-700 rounded-lg shadow-lg transform transition hover:scale-105 hover:rotate-x-6 hover:rotate-y-6 hover:shadow-2xl hover:-translate-y-1 text-black dark:text-white duration-500">
                 <h3 class="text-2xl font-bold mb-2">Laravel Project</h3>
                 <p>Collaborative project for monitoring power usage and faulty transformers.</p>
             </div>
@@ -110,9 +110,12 @@
     <section id="contact" class="p-12 bg-white dark:bg-gray-800 text-black dark:text-white">
         <h2 class="text-4xl font-bold mb-4 text-center">Contact</h2>
         <div class="max-w-md mx-auto text-center">
-            <p class="mb-2"><strong>Email:</strong> <a href="mailto:samuelepoma45@gmail.com" class="text-blue-500 hover:underline">samuelepoma45@gmail.com</a></p>
-            <p class="mb-2"><strong>GitHub:</strong> <a href="https://github.com/SamuelePoma" target="_blank" class="text-blue-500 hover:underline">SamuelePoma</a></p>
-            <p class="mb-2"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/samuelepoma" target="_blank" class="text-blue-500 hover:underline">Samuele Poma</a></p>
+            <p class="mb-2"><strong>Email:</strong> <a href="mailto:samuelepoma45@gmail.com"
+                    class="text-blue-500 hover:underline">samuelepoma45@gmail.com</a></p>
+            <p class="mb-2"><strong>GitHub:</strong> <a href="https://github.com/SamuelePoma" target="_blank"
+                    class="text-blue-500 hover:underline">SamuelePoma</a></p>
+            <p class="mb-2"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/samuelepoma" target="_blank"
+                    class="text-blue-500 hover:underline">Samuele Poma</a></p>
         </div>
     </section>
 
