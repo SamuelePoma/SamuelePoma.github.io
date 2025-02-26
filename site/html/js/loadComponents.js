@@ -8,29 +8,29 @@ document.addEventListener("DOMContentLoaded", async () => {
     initializeProjectPopups();
     initializeContactModal();
     loadFooter();
-  });
-  
-  // Load dynamic header content using async/await for proper timing
-  async function loadHeaderFooter() {
+});
+
+// Load dynamic header content using async/await for proper timing
+async function loadHeaderFooter() {
     try {
-      const response = await fetch("components/header.html");
-      const data = await response.text();
-      document.getElementById("header").innerHTML = data;
+        const response = await fetch("components/header.html");
+        const data = await response.text();
+        document.getElementById("header").innerHTML = data;
     } catch (error) {
-      console.error("Error loading header:", error);
+        console.error("Error loading header:", error);
     }
-  }
-  
-  // Load dynamic footer content using async/await
-  async function loadFooter() {
+}
+
+// Load dynamic footer content using async/await
+async function loadFooter() {
     try {
-      const response = await fetch("components/footer.html");
-      const data = await response.text();
-      document.getElementById("footer").innerHTML = data;
+        const response = await fetch("components/footer.html");
+        const data = await response.text();
+        document.getElementById("footer").innerHTML = data;
     } catch (error) {
-      console.error("Error loading footer:", error);
+        console.error("Error loading footer:", error);
     }
-  }
+}
 
 // Apply the saved theme from localStorage
 function applySavedTheme() {
@@ -76,26 +76,26 @@ function initializeDarkModeToggle() {
 // Initialize mobile navigation toggle functionality
 // Initialize mobile navigation toggle functionality
 function initializeMobileNav() {
-  const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
-  const mobileMenu = document.getElementById("mobile-menu");
-  const mainContent = document.getElementById("main-content");
+    const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const mainContent = document.getElementById("main-content");
 
-  if (mobileMenuToggle && mobileMenu && mainContent) {
-    mobileMenuToggle.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-      // Shift main content down when the mobile menu opens
-      mainContent.classList.toggle("translate-y-32");
-    });
+    if (mobileMenuToggle && mobileMenu && mainContent) {
+        mobileMenuToggle.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+            // Shift main content down when the mobile menu opens
+            mainContent.classList.toggle("translate-y-32");
+        });
 
-    // Close the menu when a link is clicked
-    const mobileLinks = mobileMenu.querySelectorAll("a");
-    mobileLinks.forEach(link => {
-      link.addEventListener("click", () => {
-        mobileMenu.classList.add("hidden");
-        mainContent.classList.remove("translate-y-32");
-      });
-    });
-  }
+        // Close the menu when a link is clicked
+        const mobileLinks = mobileMenu.querySelectorAll("a");
+        mobileLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                mobileMenu.classList.add("hidden");
+                mainContent.classList.remove("translate-y-32");
+            });
+        });
+    }
 }
 
 // Initialize project popups for project cards
