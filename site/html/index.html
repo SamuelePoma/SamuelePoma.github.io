@@ -16,10 +16,11 @@
     <link rel="canonical" href="https://samuelepoma-portfolio.netlify.app/">
 
     <!-- Security Meta Tags -->
-    <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self' https://cdn.tailwindcss.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://www.googletagmanager.com; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://cdnjs.cloudflare.com; img-src 'self' data:;">
-
-
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://cdn.tailwindcss.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://www.googletagmanager.com https://www.google-analytics.com;
+    script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://www.googletagmanager.com https://www.google-analytics.com;
+    connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com;
+    style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://cdnjs.cloudflare.com;
+    img-src 'self' data: https://www.google-analytics.com;">
 
     <!-- JSON-LD Schema Markup -->
     <script type="application/ld+json">
@@ -45,6 +46,14 @@
     <!-- Particles.js (loaded with defer) -->
     <script src="https://cdn.jsdelivr.net/gh/VincentGarreau/particles.js/particles.min.js" defer></script>
     <script src="js/tailwind-config.js" defer></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9T9LCZPL96"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-9T9LCZPL96');
+    </script>
 
     <!-- Consent Mode default settings -->
     <script defer>

@@ -1,6 +1,5 @@
 // Wait for the DOM content to be loaded
 document.addEventListener("DOMContentLoaded", async () => {
-    // Load header and footer, then initialize functionalities
     await loadHeaderFooter();
     applySavedTheme();
     initializeDarkModeToggle();
@@ -34,7 +33,7 @@ async function loadFooter() {
 
 // Apply the saved theme from localStorage
 function applySavedTheme() {
-    const savedTheme = localStorage.getItem("theme") || "light"; // Default to light mode
+    const savedTheme = localStorage.getItem("theme") || "light";
     if (savedTheme === "dark") {
         document.documentElement.classList.add("dark");
     } else {
@@ -74,7 +73,6 @@ function initializeDarkModeToggle() {
 }
 
 // Initialize mobile navigation toggle functionality
-// Initialize mobile navigation toggle functionality
 function initializeMobileNav() {
     const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
     const mobileMenu = document.getElementById("mobile-menu");
@@ -83,7 +81,6 @@ function initializeMobileNav() {
     if (mobileMenuToggle && mobileMenu && mainContent) {
         mobileMenuToggle.addEventListener("click", () => {
             mobileMenu.classList.toggle("hidden");
-            // Shift main content down when the mobile menu opens
             mainContent.classList.toggle("translate-y-32");
         });
 

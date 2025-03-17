@@ -37,10 +37,16 @@
     }
   }
   </script>
-
 </head>
 
-<!-- Consent Mode default settings: block analytics and ads until consent is given -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9T9LCZPL96"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-9T9LCZPL96');
+</script>
+
 <script>
     // Initialize dataLayer and set default consent values
     window.dataLayer = window.dataLayer || [];
@@ -50,7 +56,7 @@
         'ad_personalization': 'denied',
         'ad_storage': 'denied',
         'analytics_storage': 'denied',
-        'wait_for_update': 500 // Wait for consent update before processing tags
+        'wait_for_update': 500
     });
     gtag('js', new Date());
 </script>
@@ -58,7 +64,6 @@
 <body class="bg-white text-black dark:bg-gray-900 dark:text-white transition duration-300">
     <!-- Dynamic Header Component -->
     <div id="header"></div>
-    <!-- Main Content wrapped in <main> for accessibility -->
     <main id="main-content">
         <!-- Projects Page Header -->
         <section class="p-12 bg-gradient-to-r from-green-400 to-blue-500 text-white">
