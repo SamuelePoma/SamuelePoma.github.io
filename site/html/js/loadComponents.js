@@ -115,17 +115,17 @@ function initializeProjectPopups() {
         chessgame: {
             title: "ChessGame",
             description: "A text-based chess game developed using object-oriented programming principles and design patterns.",
-            images: ["assets/Flyer.jpg", "assets/dragon.jpg"]
+            images: ["assets/chessgame-portfolio.jpg"]
         },
         laravelproject: {
             title: "Laravel Project",
             description: "A collaborative project to develop software for monitoring power usage and managing faulty transformers.",
-            images: ["assets/Flyer.jpg", "assets/dragon.jpg"]
+            images: ["assets/Stedin-portfolio.jpg", "assets/Stedin-portfolio1.jpg"]
         },
         oopproject: {
             title: "OOP Project",
             description: "Designed and developed an educational game for elementary schools in the Netherlands as part of a team project.",
-            images: ["assets/Flyer.jpg", "assets/dragon.jpg"]
+            images: ["assets/oop-portfolio.jpg"]
         }
     };
 
